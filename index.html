@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h1 class="main-heading">Basketball ScoreCard</h1>
+            <div class="container">
+                <div>
+                    <h3>HOME</h3>
+                    <h2 class="score" id="home-score">0</h2>
+                    <div class="controls">
+                        <button onclick="incrementHome(1)">+1</button>
+                        <button onclick="incrementHome(2)">+2</button>
+                        <button onclick="incrementHome(3)">+3</button>
+                    </div>
+                </div>
+                <button class="reset-btn" onclick="reset()">RESET</button>
+                <div>
+                    <h3>GUEST</h3>
+                    <h2 class="score" id="guest-score">0</h2>
+                    <div class="controls">
+                        <button onclick="incrementGuest(1)">+1</button>
+                        <button onclick="incrementGuest(2)">+2</button>
+                        <button onclick="incrementGuest(3)">+3</button>
+                    </div>
+                </div>  
+            </div>
+            <script src="index.js"></script>
+
+            <div class="border"></div>
+    </body>
+</html>
